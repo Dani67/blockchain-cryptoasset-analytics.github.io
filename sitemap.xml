@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/tools/trading-analysis-bot/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blockchain-cryptoasset-analytics.github.io/markets/why-wabi-is-a-good-speculation/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
   </url>
@@ -15,6 +20,18 @@
   
   <url>
     <loc>https://blockchain-cryptoasset-analytics.github.io/categories/altcoins/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/tags/bot/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/categories/bot/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -45,6 +62,24 @@
   
   <url>
     <loc>https://blockchain-cryptoasset-analytics.github.io/tags/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/tags/telegram/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/categories/telegram/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/tools/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

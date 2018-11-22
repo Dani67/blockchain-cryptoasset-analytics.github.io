@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.49.2" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Trading Analysis Bot &middot; Tạp chí Bitcoin</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://blockchain-cryptoasset-analytics.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://blockchain-cryptoasset-analytics.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://blockchain-cryptoasset-analytics.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://blockchain-cryptoasset-analytics.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Tạp chí Bitcoin" />
+
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://blockchain-cryptoasset-analytics.github.io/"><h1>Tạp chí Bitcoin</h1></a>
+      <p class="lead">
+      Phân tích chuyên sâu công nghệ chuỗi khối, tiền mã hóa và thị trường đầu cơ.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://blockchain-cryptoasset-analytics.github.io/">Trang chính</a> </li>
+        <li><a href="/markets/"> Thị trường </a></li><li><a href="/tools/"> Công cụ </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2018. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Trading Analysis Bot</h1>
+  <time datetime=2018-11-22T00:00:00Z class="post-date">22-11-2018</time>
+  
+
+
+<figure>
+    
+        <img src="/avatar.png" />
+    
+    
+</figure>
+
+
+<p><strong>Trading Analysis Bot</strong> is a Telegram chatbot for data-driven analytics of cryptocurrencies market, particularly the Binance exchange. It provides standard technical indicators, social sentiment and developer activities. Market indexes, rankings and statistic metrics based on on-chain transactions across different blockchain networks are also reported.</p>
+
+<p>Chat on Telegram: <a href="https://t.me/trading_analysis_bot">https://t.me/trading_analysis_bot</a></p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li>Telegram library: python-telegram-bot</li>
+<li>Exchange library: python-binance</li>
+<li>Computational libraries: numpy, TA-lib</li>
+<li>Visualization library: matplotlib</li>
+<li>Database library: psycopg2</li>
+</ul>
+
+<h2 id="features">Features</h2>
+
+<ul>
+<li>Technical indicators: RSI, MA, BB, etc</li>
+<li>Order flow: Buy vs sell, Volume profile, Limit orderbook</li>
+<li>Cryptoasset indexes: Bletchley, Bitwise, CRIX</li>
+<li>Cryptoasset metrics: TX vol, NVT ratio, No. active addresses, No. transactions</li>
+<li>Social sentiment and developer activities: Twitter, Reddit, Facebook, GitHub</li>
+<li>Trading sessions</li>
+<li>Customized notifications</li>
+<li>Administrator and user management</li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<pre><code>git clone https://github.com/trinhvv/trading-analysis-bot.git
+</code></pre>
+
+<h2 id="run-on-local-machine">Run on local machine</h2>
+
+<pre><code>pip install -r requirements.txt
+pip install TA-lib
+</code></pre>
+
+<pre><code># For Windows
+set TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+set SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+set API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+set ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+python bot.py
+</code></pre>
+
+<pre><code># For Linux
+export TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+export SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+export API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+python bot.py
+</code></pre>
+
+<h2 id="deployment-on-heroku-platform">Deployment on Heroku platform</h2>
+
+<pre><code>heroku create trading-analysis-bot --buildpack heroku/python
+heroku buildpacks:add --index 2 https://github.com/numrut/heroku-buildpack-python-talib
+heroku config:set TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+heroku config:set ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+git push heroku master
+heroku ps:scale bot=1 
+</code></pre>
+
+<h2 id="screenshots">Screenshots</h2>
+
+<h3 id="general-information">General information</h3>
+
+<pre><code>/i zrx
+</code></pre>
+
+<pre><code>Symbol: ZRX Name: 0x
+Community (Reddit, Facebook, Twitter)
+- Facebook likes: 1240
+- Reddit average comments 48h: 2.5
+- Reddit accounts active 48h: 2898
+- Twitter followers: 134515
+- Reddit subscribers: 13784
+- Reddit average posts 48h: 0.417
+Developer (Github)
+- Forks: 199
+- Commit count 4 weeks: 519
+- Closed issues: 114
+- Pull requests merged: 567
+- Subscribers: 86
+- Stars: 785
+- Pull request contributors: 33
+- Total issues: 146
+</code></pre>
+
+<h3 id="transactions-statistics">Transactions statistics</h3>
+
+<pre><code>/t zrx 1
+</code></pre>
+
+<pre><code>#ZRXBTC: 0.00011096
+Transactions statistics (Last 500 trades)
+From 2018-08-31 09:39:43 to 2018-08-31 10:36:04 (UTC)
+~ 0$: Buy 49 vs Sell 27
+~ 1-10$: Buy 32 vs Sell 3
+&gt; 100$: Buy 122 vs Sell 102
+&gt; 200$: Buy 94 vs Sell 60
+&gt; 500$: Buy 33 vs Sell 3
+&gt; 1,000$: Buy 5 vs Sell 2
+&gt; 2,000$: Buy 0 vs Sell 1
+&gt; 5,000$: Buy 0 vs Sell 0
+&gt; 10,000$: Buy 0 vs Sell 0
+Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
+- Last 30 mins: Buy 42,792 vs Sell 16,584
+- Last 15 mins: Buy 22,665 vs Sell 6,965
+- Last 5 mins: Buy 6,644 vs Sell 3,130
+</code></pre>
+
+
+<figure>
+    
+        <img src="/t_zrx_1.png" />
+    
+    
+</figure>
+
+
+<h3 id="order-flow">Order flow</h3>
+
+<pre><code>/a zrx
+</code></pre>
+
+<p>
+<figure>
+    
+        <img src="/a_zrx_1h.jpg" />
+    
+    
+</figure>
+
+
+<figure>
+    
+        <img src="/a_zrx_30m.jpg" />
+    
+    
+</figure>
+</p>
+
+<h3 id="cryptoasset-indexes">Cryptoasset indexes</h3>
+
+<pre><code>/m
+</code></pre>
+
+<p>
+<figure>
+    
+        <img src="/bletchley_index.jpg" />
+    
+    
+</figure>
+
+
+<figure>
+    
+        <img src="/crix_index.jpg" />
+    
+    
+</figure>
+</p>
+
+<h3 id="trading-sessions">Trading sessions</h3>
+
+<pre><code>/h
+</code></pre>
+
+
+<figure>
+    
+        <img src="/h.png" />
+    
+    
+</figure>
+
+
+<h2 id="licence">Licence</h2>
+
+<p>MIT</p>
+
+<h2 id="support-and-donation">Support and Donation</h2>
+
+<ul>
+<li>Star and/or fork this repository</li>
+<li>Trade on Binance: <a href="https://www.binance.com/?ref=13339920">https://www.binance.com/?ref=13339920</a></li>
+<li>Trade on Huobi: <a href="https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3">https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3</a></li>
+<li>BTC tipjar: 1DrEMhMP5rAytKyKXRzc6szTcUX8bZzZgq</li>
+<li>ETH tipjar: 0x3915D216f9Fc6ec08f956555e84385513dE5f214</li>
+<li>LTC tipjar: LX8GJkGTZFmAA7puCyVp48333iQdCN6vca</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

@@ -6,9 +6,46 @@
     <description>Recent content in Categories on Blockchain and Cryptoasset Analytics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blockchain-cryptoasset-analytics.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Altcoins</title>
+      <link>https://blockchain-cryptoasset-analytics.github.io/categories/altcoins/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/altcoins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://blockchain-cryptoasset-analytics.github.io/categories/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blockchain-cryptoasset-analytics.github.io/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speculation</title>
+      <link>https://blockchain-cryptoasset-analytics.github.io/categories/speculation/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/speculation/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

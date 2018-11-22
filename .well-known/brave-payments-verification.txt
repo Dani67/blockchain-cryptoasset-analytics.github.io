@@ -1,4 +1,4 @@
 This is a Brave Payments publisher verification file.
 
 Domain: blockchain-cryptoasset-analytics.github.io
-Token: 5b17c49cd2109b391d0cf737e70cc48ca4c22c755fbe8823ed09fc07bd02721d
+Token: aef3df93c524fb24eb49c63fe7a62732fd9d21d8e119574992e869b5ec811b6c

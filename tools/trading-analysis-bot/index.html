@@ -58,96 +58,20 @@
 
 <figure>
     
-        <img src="/avatar.png" />
+        <img src="/tools/avatar.png" />
     
     
 </figure>
 
 
-<p><strong>Trading Analysis Bot</strong> is a Telegram chatbot for data-driven analytics of cryptocurrencies market, particularly the Binance exchange. It provides standard technical indicators, social sentiment and developer activities. Market indexes, rankings and statistic metrics based on on-chain transactions across different blockchain networks are also reported.</p>
+<p><strong>Trading Analysis Bot</strong> là một chatbot trên nền tảng Telegram chuyên về phân tích thị trường tiền số, chủ yếu trên sàn Binance. Nó cung cấp chỉ báo kỹ thuật, phân tích cảm tính và hoạt động phát triển mã nguồn của các dự án tiền số niêm yết. Các chỉ số thị trường và thống kê giao dịch trên mạng chuỗi khối cũng được hỗ trợ và đang phát triển thêm.</p>
 
-<p>Chat on Telegram: <a href="https://t.me/trading_analysis_bot">https://t.me/trading_analysis_bot</a></p>
+<p>GitHub: <a href="https://github.com/trinhvv/trading-analysis-bot">https://github.com/trinhvv/trading-analysis-bot</a>
+Telegram: <a href="https://t.me/trading_analysis_bot">https://t.me/trading_analysis_bot</a></p>
 
-<h2 id="requirements">Requirements</h2>
+<h2 id="sử-dụng">Sử dụng</h2>
 
-<ul>
-<li>Telegram library: python-telegram-bot</li>
-<li>Exchange library: python-binance</li>
-<li>Computational libraries: numpy, TA-lib</li>
-<li>Visualization library: matplotlib</li>
-<li>Database library: psycopg2</li>
-</ul>
-
-<h2 id="features">Features</h2>
-
-<ul>
-<li>Technical indicators: RSI, MA, BB, etc</li>
-<li>Order flow: Buy vs sell, Volume profile, Limit orderbook</li>
-<li>Cryptoasset indexes: Bletchley, Bitwise, CRIX</li>
-<li>Cryptoasset metrics: TX vol, NVT ratio, No. active addresses, No. transactions</li>
-<li>Social sentiment and developer activities: Twitter, Reddit, Facebook, GitHub</li>
-<li>Trading sessions</li>
-<li>Customized notifications</li>
-<li>Administrator and user management</li>
-</ul>
-
-<h2 id="install">Install</h2>
-
-<pre><code>git clone https://github.com/trinhvv/trading-analysis-bot.git
-</code></pre>
-
-<h2 id="run-on-local-machine">Run on local machine</h2>
-
-<pre><code>pip install -r requirements.txt
-pip install TA-lib
-</code></pre>
-
-<pre><code># For Windows
-set TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-set SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-set API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-set ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-python bot.py
-</code></pre>
-
-<pre><code># For Linux
-export TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-export SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-export API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-python bot.py
-</code></pre>
-
-<h2 id="deployment-on-heroku-platform">Deployment on Heroku platform</h2>
-
-<pre><code>heroku create trading-analysis-bot --buildpack heroku/python
-heroku buildpacks:add --index 2 https://github.com/numrut/heroku-buildpack-python-talib
-heroku config:set TELEGRAM_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set DB_NAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set DB_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set DB_HOST=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set DB_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set ADMIN_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-heroku config:set ADMIN_USERNAME=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-git push heroku master
-heroku ps:scale bot=1 
-</code></pre>
-
-<h2 id="screenshots">Screenshots</h2>
-
-<h3 id="general-information">General information</h3>
+<h3 id="thông-tin-cơ-bản">Thông tin cơ bản</h3>
 
 <pre><code>/i zrx
 </code></pre>
@@ -171,7 +95,7 @@ Developer (Github)
 - Total issues: 146
 </code></pre>
 
-<h3 id="transactions-statistics">Transactions statistics</h3>
+<h3 id="thống-kê-cung-cầu">Thống kê cung cầu</h3>
 
 <pre><code>/t zrx 1
 </code></pre>
@@ -197,13 +121,11 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 
 <figure>
     
-        <img src="/t_zrx_1.png" />
+        <img src="/tools/t_zrx_1.png" />
     
     
 </figure>
 
-
-<h3 id="order-flow">Order flow</h3>
 
 <pre><code>/a zrx
 </code></pre>
@@ -211,7 +133,7 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 <p>
 <figure>
     
-        <img src="/a_zrx_1h.jpg" />
+        <img src="/tools/a_zrx_1h.jpg" />
     
     
 </figure>
@@ -219,13 +141,13 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 
 <figure>
     
-        <img src="/a_zrx_30m.jpg" />
+        <img src="/tools/a_zrx_30m.jpg" />
     
     
 </figure>
 </p>
 
-<h3 id="cryptoasset-indexes">Cryptoasset indexes</h3>
+<h3 id="chỉ-số-thị-trường">Chỉ số thị trường</h3>
 
 <pre><code>/m
 </code></pre>
@@ -233,7 +155,7 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 <p>
 <figure>
     
-        <img src="/bletchley_index.jpg" />
+        <img src="/tools/bletchley_index.jpg" />
     
     
 </figure>
@@ -241,13 +163,13 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 
 <figure>
     
-        <img src="/crix_index.jpg" />
+        <img src="/tools/crix_index.jpg" />
     
     
 </figure>
 </p>
 
-<h3 id="trading-sessions">Trading sessions</h3>
+<h3 id="phiên-giao-dịch">Phiên giao dịch</h3>
 
 <pre><code>/h
 </code></pre>
@@ -255,22 +177,17 @@ Total: Buy 68,343 (52,521$) vs Sell 45,714 (35,059$)
 
 <figure>
     
-        <img src="/h.png" />
+        <img src="/tools/h.png" />
     
     
 </figure>
 
 
-<h2 id="licence">Licence</h2>
-
-<p>MIT</p>
-
-<h2 id="support-and-donation">Support and Donation</h2>
+<h2 id="hỗ-trợ">Hỗ trợ</h2>
 
 <ul>
-<li>Star and/or fork this repository</li>
-<li>Trade on Binance: <a href="https://www.binance.com/?ref=13339920">https://www.binance.com/?ref=13339920</a></li>
-<li>Trade on Huobi: <a href="https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3">https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3</a></li>
+<li>Binance: <a href="https://www.binance.com/?ref=13339920">https://www.binance.com/?ref=13339920</a></li>
+<li>Huobi: <a href="https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3">https://www.huobi.br.com/en-us/topic/invited/?invite_code=x93k3</a></li>
 <li>BTC tipjar: 1DrEMhMP5rAytKyKXRzc6szTcUX8bZzZgq</li>
 <li>ETH tipjar: 0x3915D216f9Fc6ec08f956555e84385513dE5f214</li>
 <li>LTC tipjar: LX8GJkGTZFmAA7puCyVp48333iQdCN6vca</li>

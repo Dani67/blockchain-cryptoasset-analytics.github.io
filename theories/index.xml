@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theories on Tạp chí Bitcoin</title>
+    <link>https://blockchain-cryptoasset-analytics.github.io/theories/</link>
+    <description>Recent content in Theories on Tạp chí Bitcoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blockchain-cryptoasset-analytics.github.io/theories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lý thuyết của Nicolas Darvas</title>
+      <link>https://blockchain-cryptoasset-analytics.github.io/theories/nicolas-darvas-theory/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blockchain-cryptoasset-analytics.github.io/theories/nicolas-darvas-theory/</guid>
+      <description>Từ 36.000 USD, Nicolas Darvas gia tăng tài sản của mình lên tới hơn 2 triệu USD. Và cứ thế trong vòng có vài năm, Nicolas Darvas đã trở thành triệu phú chỉ nhờ kinh doanh chứng khoán.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/theories/nicolas-darvas-theory/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blockchain-cryptoasset-analytics.github.io/tools/trading-analysis-bot/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
   </url>
@@ -25,6 +30,12 @@
   
   <url>
     <loc>https://blockchain-cryptoasset-analytics.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blockchain-cryptoasset-analytics.github.io/theories/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

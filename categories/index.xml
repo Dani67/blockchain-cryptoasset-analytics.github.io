@@ -6,46 +6,9 @@
     <description>Recent content in Categories on Tạp chí Bitcoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blockchain-cryptoasset-analytics.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Altcoins</title>
-      <link>https://blockchain-cryptoasset-analytics.github.io/categories/altcoins/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/altcoins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bot</title>
-      <link>https://blockchain-cryptoasset-analytics.github.io/categories/bot/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/bot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Speculation</title>
-      <link>https://blockchain-cryptoasset-analytics.github.io/categories/speculation/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/speculation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Telegram</title>
-      <link>https://blockchain-cryptoasset-analytics.github.io/categories/telegram/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blockchain-cryptoasset-analytics.github.io/categories/telegram/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
